@@ -238,109 +238,116 @@
             });
         </script>
 
-          <!-- Testimonial Section -->
-           <section id="testimonial" class="flex flex-col justify-center items-center my-20">
-                <!-- Heading -->
-                 <h2 class="text-4xl md:text-5xl font-bold my-10 text-orange-800">Testimonial</h2>
+         <!-- Testimonial Section -->
+<section id="testimonial" class="flex flex-col justify-center items-center my-20">
+    <!-- Heading -->
+    <h2 class="text-4xl md:text-5xl font-bold my-10 text-orange-800">Testimonial</h2>
 
-                 <!-- Testimonial container -->
-                  <div class=" grid md:grid-cols-2 lg:grid-cols-4 items-end">
+    <!-- Testimonial container -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 items-end">
 
-                     <!-- Testimonial 1 -->
-                      <div class="p-3 mx-3">
-                            <!-- Comment -->
-                               <div class=" relative rounded-lg shadow-lg p-3 border mb-5 bg-slate-600  text-white">
-                                The source code for the gym website exceeded my expectations! It was easy to customize, and the built-in features like class scheduling and membership management made it a breeze to set up. My members love the new site!
-                                <button class="bg-orange-600 rounded text-white   text-sm px-2 border hover:bg-orange-700">more</button>
+        <!-- Testimonial 1 -->
+        <div class="p-3 mx-3">
+            <!-- Comment -->
+            <div class="relative rounded-lg shadow-lg p-3 border mb-5 bg-slate-600 text-white hidden" id="testimonial1">
+                The source code for the gym website exceeded my expectations! It was easy to customize, and the built-in features like class scheduling and membership management made it a breeze to set up. My members love the new site!
+                <button class="bg-orange-600 rounded text-white text-sm px-2 border hover:bg-orange-700">more</button>
+                <div class="absolute">
+                    <svg class="size-8 fill-slate-600" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="triangle">
+                        <!-- Downward-facing Triangle -->
+                        <polygon points="50,85 90,15 10,15" />
+                    </svg>
+                </div>
+            </div>
+            <!-- Avatar profile -->
+            <div class="flex items-center space-x-3" onclick="toggleTestimonial('testimonial1')">
+                <img src="../images/13.jpg" alt="" class="size-20 rounded-full">
+                <div class="text-slate-800">
+                    <h5 class="font-bold">Deji Mathew</h5>
+                    <p>GYM Owner</p>
+                </div>
+            </div>
+        </div>
 
-                                <div class="absolute">
-                                    <svg class="size-8 fill-slate-600"  width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="triangle">
-                                        <!-- Downward-facing Triangle -->
-                                        <polygon points="50,85 90,15 10,15" />
-                                    </svg>
-                                </div>
-                               </div>
-                            <!-- Avatar profile -->
-                             <div class=" flex items-center  space-x-3">
-                                <img src="../images/13.jpg" alt="" class="size-20 rounded-full">
-                                <div class="text-slate-800">
-                                        <h5 class="font-bold">Deji Mathew</h5>
-                                        <p>GYM Owner</p>
-                                </div>
-                             </div>
-                      </div>
-                     <!-- Testimonial 2 -->
-                     <div class="p-3 mx-3">
-                        <!-- Comment -->
-                           <div class=" relative rounded-lg shadow-lg p-3 border mb-5 bg-slate-600  text-white">
-                            I purchased the source code for an e-commerce website, and it was a game-changer for my business. The user-friendly interface and seamless payment integration allowed me to launch quickly. Sales have skyrocketed since I made the switch!
-                            <button class="bg-orange-600 rounded text-white   text-sm px-2 border hover:bg-orange-700">more</button>
+        <!-- Testimonial 2 -->
+        <div class="p-3 mx-3">
+            <!-- Comment -->
+            <div class="relative rounded-lg shadow-lg p-3 border mb-5 bg-slate-600 text-white hidden" id="testimonial2">
+                I purchased the source code for an e-commerce website, and it was a game-changer for my business. The user-friendly interface and seamless payment integration allowed me to launch quickly. Sales have skyrocketed since I made the switch!
+                <button class="bg-orange-600 rounded text-white text-sm px-2 border hover:bg-orange-700">more</button>
+                <div class="absolute">
+                    <svg class="size-8 fill-slate-600" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="triangle">
+                        <!-- Downward-facing Triangle -->
+                        <polygon points="50,85 90,15 10,15" />
+                    </svg>
+                </div>
+            </div>
+            <!-- Avatar profile -->
+            <div class="flex items-center space-x-3" onclick="toggleTestimonial('testimonial2')">
+                <img src="../images/6.jpg" alt="" class="size-20 rounded-full ">
+                <div class="text-slate-800">
+                    <h3 class="font-bold">Sarath Eli</h3>
+                    <p>Principal</p>
+                </div>
+            </div>
+        </div>
 
-                            <div class="absolute">
-                                <svg class="size-8 fill-slate-600"  width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="triangle">
-                                    <!-- Downward-facing Triangle -->
-                                    <polygon points="50,85 90,15 10,15" />
-                                </svg>
-                            </div>
-                           </div>
-                        <!-- Avatar profile -->
-                         <div class=" flex items-center  space-x-3">
-                            <img src="../images/6.jpg" alt="" class="size-20 rounded-full ">
-                            <div class="text-slate-800">
-                                <h3 class="font-bold">Sarath Eli</h3>
-                                <p>Principal</p>
-                            </div>
-                         </div>
-                  </div>
-                     <!-- Testimonial 3 -->
-                     <div class="p-3 mx-3">
-                        <!-- Comment -->
-                           <div class=" relative rounded-lg shadow-lg p-3 border mb-5 bg-slate-600  text-white">
-                            The source code for the art gallery website was a perfect fit for showcasing our collection. The design is stunning, and the integration of online ticket sales has significantly increased our visitor numbers. Thank you for such a fantastic product!"
-                            <button class="bg-orange-600 rounded text-white   text-sm px-2 border hover:bg-orange-700">more</button>
+        <!-- Testimonial 3 -->
+        <div class="p-3 mx-3">
+            <!-- Comment -->
+            <div class="relative rounded-lg shadow-lg p-3 border mb-5 bg-slate-600 text-white hidden" id="testimonial3">
+                The source code for the art gallery website was a perfect fit for showcasing our collection. The design is stunning, and the integration of online ticket sales has significantly increased our visitor numbers. Thank you for such a fantastic product!
+                <button class="bg-orange-600 rounded text-white text-sm px-2 border hover:bg-orange-700">more</button>
+                <div class="absolute">
+                    <svg class="size-8 fill-slate-600" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="triangle">
+                        <!-- Downward-facing Triangle -->
+                        <polygon points="50,85 90,15 10,15" />
+                    </svg>
+                </div>
+            </div>
+            <!-- Avatar profile -->
+            <div class="flex items-center space-x-3" onclick="toggleTestimonial('testimonial3')">
+                <img src="../images/14.jpg" alt="" class="size-20 rounded-full ">
+                <div class="text-slate-800">
+                    <h3 class="font-bold">James Cameron</h3>
+                    <p>Gallery Curator</p>
+                </div>
+            </div>
+        </div>
 
-                            <div class="absolute">
-                                <svg class="size-8 fill-slate-600"  width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="triangle">
-                                    <!-- Downward-facing Triangle -->
-                                    <polygon points="50,85 90,15 10,15" />
-                                </svg>
-                            </div>
-                           </div>
-                        <!-- Avatar profile -->
-                         <div class=" flex items-center  space-x-3">
-                            <img src="../images/14.jpg" alt="" class="size-20 rounded-full ">
-                            <div class="text-slate-800">
-                                <h3 class="font-bold">James Cameron</h3>
-                                <p>Gallary Curator/p>
-                            </div>
-                         </div>
-                  </div>
-                     <!-- Testimonial 4 -->
-                     <div class="p-3 mx-3">
-                        <!-- Comment -->
-                           <div class=" relative rounded-lg shadow-lg p-3 border mb-5 bg-slate-600  text-white">
-                            The e-commerce website source code was a game changer for my boutique. The design is sleek and modern, and the backend is so user-friendly that I can manage inventory and sales with ease. My online sales have doubled!
-                            <button class="bg-orange-600 rounded text-white   text-sm px-2 border hover:bg-orange-700">more</button>
+        <!-- Testimonial 4 -->
+        <div class="p-3 mx-3">
+            <!-- Comment -->
+            <div class="relative rounded-lg shadow-lg p-3 border mb-5 bg-slate-600 text-white hidden" id="testimonial4">
+                The e-commerce website source code was a game changer for my boutique. The design is sleek and modern, and the backend is so user-friendly that I can manage inventory and sales with ease. My online sales have doubled!
+                <button class="bg-orange-600 rounded text-white text-sm px-2 border hover:bg-orange-700">more</button>
+                <div class="absolute">
+                    <svg class="size-8 fill-slate-600" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="triangle">
+                        <!-- Downward-facing Triangle -->
+                        <polygon points="50,85 90,15 10,15" />
+                    </svg>
+                </div>
+            </div>
+            <!-- Avatar profile -->
+            <div class="flex items-center space-x-3" onclick="toggleTestimonial('testimonial4')">
+                <img src="../images/18.jpg" alt="" class="size-20 rounded-full ">
+                <div class="text-slate-800">
+                    <h3 class="font-bold">Maria Uche</h3>
+                    <p>CEO</p>
+                </div>
+            </div>
+        </div>
 
-                            <div class="absolute">
-                                <svg class="size-8 fill-slate-600"  width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="triangle">
-                                    <!-- Downward-facing Triangle -->
-                                    <polygon points="50,85 90,15 10,15" />
-                                </svg>
-                            </div>
-                           </div>
-                        <!-- Avatar profile -->
-                         <div class=" flex items-center  space-x-3">
-                            <img src="../images/18.jpg" alt="" class="size-20 rounded-full ">
-                            <div class="text-slate-800">
-                                <h3 class="font-bold">Maria Uche</h3>
-                                <p>CEO</p>
-                            </div>
-                         </div>
-                  </div>
-                  </div>
+    </div>
+</section>
 
-           </section>
+<script>
+    function toggleTestimonial(testimonialId) {
+        const testimonialElement = document.getElementById(testimonialId);
+        testimonialElement.classList.toggle('hidden');
+    }
+</script>
+
 
 
 
