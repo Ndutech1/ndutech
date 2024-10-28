@@ -172,21 +172,15 @@
                     <img src="../images/1728071431627.jpeg" alt="" class="bg-cover h-60 w-full">
                     <div class="p-3">
                         <h3 class="text-2xl font-semibold">Drones</h3>
-                        <p>
-                          Drones, or UAVs, are versatile tools that drive innovation across various fields. In agriculture, they enhance crop monitoring, precision farming, and spraying efficiency. In healthcare, drones enable rapid delivery of medical supplies to remote areas and assist in emergency rescues. Environmental conservation benefits from drones for wildlife tracking and pollution monitoring, while construction uses them for site surveying and infrastructure inspection.
-                        </p>
+                        <p>Drones, or UAVs, are versatile tools that drive innovation across various fields. In agriculture, they enhance crop monitoring, precision farming, and spraying efficiency. In healthcare, drones enable rapid delivery of medical supplies to remote areas and assist in emergency rescues. Environmental conservation benefits from drones for wildlife tracking and pollution monitoring, while construction uses them for site surveying and infrastructure inspection.</p>
                       
-                        <button id="toggle-button" class="border border-orange-600 hover:bg-orange-100 bg-white px-4 py-1 rounded-lg mx-5 my-7">
-                          See more
-                        </button>
-                        
-                        <div id="extra-content" class="mt-3 hidden">
-                          <p>
-                            Drones also improve logistics with last-mile delivery and inventory management, while defense and security leverage them for surveillance and disaster relief. The media and entertainment industries use drones to capture unique aerial views, and urban planning benefits from their traffic management and public safety applications. GIS and mapping rely on drones for high-resolution imaging, and educational institutions incorporate them for research and STEM learning. Overall, drones enhance efficiency, safety, and data access, transforming industries and improving service delivery across sectors.
-                          </p>
-                        </div>
+                        <details>
+                          <summary class="border border-orange-600 hover:bg-orange-100 bg-white px-4 py-1 rounded-lg mx-5 my-7 cursor-pointer inline-block">
+                          </summary>
+                          <p class="mt-3">Drones also improve logistics with last-mile delivery and inventory management, while defense and security leverage them for surveillance and disaster relief. The media and entertainment industries use drones to capture unique aerial views, and urban planning benefits from their traffic management and public safety applications. GIS and mapping rely on drones for high-resolution imaging, and educational institutions incorporate them for research and STEM learning. Overall, drones enhance efficiency, safety, and data access, transforming industries and improving service delivery across sectors.</p>
+                        </details>
                     </div>
-                </div>
+                 </div>
                       
                 <!-- Card 2-->
                 <div class="rounded-lg shadow-lg border">
@@ -211,15 +205,6 @@
              </div>
 
         </section>
-        <script>
-            const toggleButton = document.getElementById('toggle-button');
-            const extraContent = document.getElementById('extra-content');
-          
-            toggleButton.addEventListener('click', () => {
-              extraContent.classList.toggle('hidden');
-              toggleButton.textContent = extraContent.classList.contains('hidden') ? 'See more' : 'See less';
-            });
-        </script>
 
           <!-- Testimonial Section -->
            <section id="testimonial" class="flex flex-col justify-center items-center my-20">
