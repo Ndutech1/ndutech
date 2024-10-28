@@ -221,6 +221,10 @@ textarea {
   padding: 0;
   /* 3 */
 }
+.hidden {
+  display: none;
+}
+
 
 /*
 Remove the inheritance of text transform in Edge and Firefox.
