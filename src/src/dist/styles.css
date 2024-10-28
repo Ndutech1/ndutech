@@ -195,7 +195,6 @@ table {
 */
 
 button,
-summary,
 input,
 optgroup,
 select,
@@ -220,14 +219,13 @@ textarea {
   /* 2 */
   padding: 0;
   /* 3 */
-
+}
 
 /*
 Remove the inheritance of text transform in Edge and Firefox.
 */
 
 button,
-summary,
 select {
   text-transform: none;
 }
@@ -238,7 +236,6 @@ select {
 */
 
 button,
-summary,
 input:where([type='button']),
 input:where([type='reset']),
 input:where([type='submit']) {
@@ -401,7 +398,6 @@ Set the default cursor for buttons.
 */
 
 button,
-summary,
 [role="button"] {
   cursor: pointer;
 }
