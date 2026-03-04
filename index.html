@@ -3,215 +3,230 @@
 
 <head>
     <meta charset="utf-8">
-    <title>NDUTECH | Portfolio</title>
+    <title>NDUTECH_overview</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Ndubuisi Benedict Portfolio, Fullstack Developer, UAV Pilot" name="keywords">
-    <meta content="Professional portfolio of Ndubuisi Benedict - Software Engineer & GIS Analyst" name="description">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
     <link href="img/favicon.ico" rel="icon">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    <style>
-        :root {
-            --primary-brand: #7c2d12;
-            --accent-blue: #457efa;
-            --light-bg: #f8f9fa;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            color: #444;
-        }
-
-        .text-brand { color: var(--primary-brand); }
-        .bg-brand { background-color: var(--primary-brand); }
-        
-        .navbar-light .navbar-nav .nav-link {
-            padding: 20px 15px;
-            font-weight: 500;
-            transition: .3s;
-        }
-
-        .hero-header {
-            min-height: 100vh;
-            background: linear-gradient(rgba(124, 45, 18, 0.95), rgba(124, 45, 18, 0.95)), url('img/header-bg.jpg');
-            background-size: cover;
-            display: flex;
-            align-items: center;
-        }
-
-        .btn-brand {
-            background-color: var(--accent-blue);
-            color: #fff;
-            border-radius: 50px;
-            padding: 10px 30px;
-            transition: 0.3s;
-        }
-
-        .btn-brand:hover {
-            background-color: #3462c7;
-            color: #fff;
-            transform: translateY(-2px);
-        }
-
-        .section-title {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 50px;
-        }
-
-        .section-title h1:first-child {
-            color: transparent;
-            -webkit-text-stroke: 1px #dee2e6;
-            font-size: 8rem;
-            text-transform: uppercase;
-        }
-
-        .section-title h1:last-child {
-            position: absolute;
-            text-transform: uppercase;
-            color: var(--primary-brand);
-            font-size: 2.5rem;
-        }
-
-        .skill-box { margin-bottom: 25px; }
-        .progress { height: 10px; border-radius: 5px; }
-
-        .service-box {
-            padding: 30px;
-            box-shadow: 0 0 45px rgba(0,0,0,.05);
-            transition: .5s;
-            border-radius: 10px;
-            background: #fff;
-            height: 100%;
-        }
-
-        .service-box:hover {
-            margin-top: -10px;
-            background: var(--primary-brand);
-        }
-
-        .service-box:hover * { color: #fff !important; }
-
-        .footer {
-            background-color: var(--primary-brand);
-            color: #fff;
-        }
-
-        @media (max-width: 991.98px) {
-            .section-title h1:first-child { font-size: 4rem; }
-        }
-    </style>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
         <a href="index.html" class="navbar-brand ml-lg-3">
-            <h3 class="m-0"><span class="text-brand">NDUTECH</span> CompCity</h3>
+            <h3 class="m-0 display-5"><span style="color: #7c2d12;">NDUTECH</span>  CompCity Ent</h3>
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+        <div style="color:#7c2d12;" class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
             <div class="navbar-nav m-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#skill" class="nav-item nav-link">Skills</a>
-                <a href="#service" class="nav-item nav-link">Services</a>
+                <a href="#qualification" class="nav-item nav-link">Quality</a>
+                <a href="#skill" class="nav-item nav-link">Skill</a>
+                <a href="#service" class="nav-item nav-link">Service</a>
                 <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                <a href="#testimonial" class="nav-item nav-link">Review</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
+                <a href="src/src/htmls/index.html" class="nav-item nav-link">Buy Src</a>
             </div>
-            <a href="#contact" class="btn btn-brand d-none d-lg-block">Hire Me</a>
+            <a href="#contact" class="btn btn-menu d-none d-lg-block" style="background-color:#457efa; color: #ffffff;">Hire Me</a>
         </div>
     </nav>
-    <div class="container-fluid hero-header mb-5" id="home">
+    <div class="container-fluid d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh; background-color: #7c2d12;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">Hello, I'm</h3>
-                    <h1 class="display-3 text-uppercase text-white mb-2" style="-webkit-text-stroke: 2px #fff; font-weight: 900;">Ndubuisi Benedict</h1>
-                    <h4 class="typed-text-output d-inline font-weight-light text-white">Fullstack Developer & UAV Pilot</h4>
+                    <h3 class="text-white font-weight-normal mb-3">Hello, my name</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 4px #ffffff;">Ndubuisi Benedict</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Fullstack Developer, Web Developer, Software Engineer, Apps Designer, Apps Developer, UAV Pilot, GIS Analyst</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="Profile.pdf" class="btn btn-light px-4 py-2 mr-4">Download CV</a>
-                        <a href="img/vid-full.mp4" class="btn btn-outline-light px-4 py-2 d-none d-sm-block">Play Video</a>
+                        <a href="Profile.pdf" class="btn btn-white mr-4">Download CV</a>
+                        <a href="img/vid fulllenght.mp4" class="btn btn-blue d-none d-sm-block">Play Video</a>
                     </div>
                 </div>
-                <div class="col-lg-5 text-center">
-                    <img class="img-fluid rounded-circle shadow-lg border border-white" src="Img.jpg" alt="Profile" style="max-width: 80%;">
+                <div class="col-lg-5 px-8 pl-lg-0 pb-5 pb-lg-4 about-img">
+                   <img class="img-fluid w-100 rounded-circle shadow-sm" src="Img.jpg" alt="">
                 </div>
             </div>
         </div>
     </div>
     <div class="container-fluid py-5" id="about">
         <div class="container">
-            <div class="section-title">
-                <h1>About</h1>
-                <h1>About Me</h1>
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded shadow" src="pilot.jpg" alt="About Image">
+                    <img class="img-fluid rounded w-100" src="pilot.jpg" alt="img">
                 </div>
                 <div class="col-lg-7">
-                    <h3 class="mb-4">Fullstack Software Engineer, UAV Pilot & GIS Analyst</h3>
-                    <p>Meet Dubem, a multifaceted professional with a passion for innovation. Expertly bridging the gap between software development and geospatial intelligence. 🤓</p>
+                    <h3 class="mb-4">FULLSTACK SOFTWARE_ENIGNEER, UAV_PILOT & GIS ANALYST</h3>
+                    <p>Meet Dubem, a multifaceted professional with a passion for innovation as a full-stack developer and software engineer, also a certified drone pilot and a GIS Analyst.🤓</p>
                     <div class="row mb-3">
                         <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Ndubuisi Benedict</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">22nd August 1997</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Bsc</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">5 Years</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">BSc Computer Science</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+234 907 2211 264</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">chidubembenedict2019@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">123 Street, FCT, Abuja</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
-                        <div class="col-sm-12 py-2"><h6>Email: <span class="text-secondary">chidubembenedict2019@gmail.com</span></h6></div>
                     </div>
-                    <a href="#contact" class="btn btn-brand mr-3">Hire Me</a>
-                    <a href="Profile.pdf" class="btn btn-outline-dark">Learn More</a>
+                    <a href="#contact" class="btn blue btn-outline-primary mr-4">Hire Me</a>
+                    <a href="Profile.pdf" class="btn btn-outline-primary">Learn More</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="container-fluid py-5" id="skill">
         <div class="container">
-            <div class="section-title">
-                <h1>Skills</h1>
-                <h1>Technical Skills</h1>
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
             </div>
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-md-6">
-                    <div class="skill-box">
-                        <div class="d-flex justify-content-between"><h6 class="font-weight-bold">HTML/CSS</h6><h6 class="font-weight-bold">85%</h6></div>
-                        <div class="progress"><div class="progress-bar bg-brand" style="width: 85%"></div></div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                            <h6 class="font-weight-bold">85%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
-                    <div class="skill-box">
-                        <div class="d-flex justify-content-between"><h6 class="font-weight-bold">React JS</h6><h6 class="font-weight-bold">80%</h6></div>
-                        <div class="progress"><div class="progress-bar bg-info" style="width: 80%"></div></div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">CSS</h6>
+                            <h6 class="font-weight-bold">80%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
-                    <div class="skill-box">
-                        <div class="d-flex justify-content-between"><h6 class="font-weight-bold">UAV Piloting</h6><h6 class="font-weight-bold">99%</h6></div>
-                        <div class="progress"><div class="progress-bar bg-success" style="width: 99%"></div></div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">UAV Pilot</h6>
+                            <h6 class="font-weight-bold">99%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="skill-box">
-                        <div class="d-flex justify-content-between"><h6 class="font-weight-bold">JavaScript</h6><h6 class="font-weight-bold">80%</h6></div>
-                        <div class="progress"><div class="progress-bar bg-warning" style="width: 80%"></div></div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">REACT</h6>
+                            <h6 class="font-weight-bold">80%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
-                    <div class="skill-box">
-                        <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Python</h6><h6 class="font-weight-bold">60%</h6></div>
-                        <div class="progress"><div class="progress-bar bg-dark" style="width: 60%"></div></div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Javascript</h6>
+                            <h6 class="font-weight-bold">80%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
                     </div>
-                    <div class="skill-box">
-                        <div class="d-flex justify-content-between"><h6 class="font-weight-bold">GIS Analysis</h6><h6 class="font-weight-bold">55%</h6></div>
-                        <div class="progress"><div class="progress-bar bg-danger" style="width: 55%"></div></div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Python</h6>
+                            <h6 class="font-weight-bold">60%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">GIS ANALYST</h6>
+                            <h6 class="font-weight-bold">55%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Experience</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px; font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Bachelor of Science</h5>
+                            <p class="mb-2"><strong>Nasarawa State University</strong> | <small>2019 - Loading...</small></p>
+                            <p>Still on my Bachelor Degree Certificate in the Department of computer science, Nasarawa State University keffi.</p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Degree In CSE</h5>
+                            <p class="mb-2"><strong>Harvard University</strong> | <small>2016 - 2022</small></p>
+                            <p>Finished my online degree in Harvard University, Division of Continuous Education</p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Certified in HTML and CSS</h5>
+                            <p class="mb-2"><strong>Abuja International Academy</strong> | <small>2015</small></p>
+                            <p>Certified in HTML, CSS and JavaScript</p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Certified in React & JavaScript</h5>
+                            <p class="mb-2"><strong>NITDA</strong> | <small>2024</small></p>
+                            <p>Software Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Experience</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Web Designer</h5>
+                            <p class="mb-2"><strong>Long Rich Company</strong> | <small> Excellent</small></p>
+                            <p>Digital service website</p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Web Development</h5>
+                            <p class="mb-2"><strong>NDUTECH</strong> | <small> Excellent</small></p>
+                            <p>Software Developer</p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Software Engineer</h5>
+                            <p class="mb-2"><strong>EIB Stratoc Limited</strong> | <small> Excellent</small></p>
+                            <p>Software Developer</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -219,30 +234,117 @@
     </div>
     <div class="container-fluid pt-5" id="service">
         <div class="container">
-            <div class="section-title">
-                <h1>Services</h1>
-                <h1>What I Offer</h1>
+            <div class="service-h4 position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Services</h1>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-box text-center">
-                        <i class="fa fa-2x fa-laptop text-brand mb-4"></i>
-                        <h4 class="font-weight-bold">Web Design</h4>
-                        <p>High-end commercial websites focused on user conversion and clean aesthetics.</p>
+            <div class="row pb-3">
+                <div class="service-box col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web Design</h4>
+                    </div>
+                    <p>This is a commercial Website where you can buy and sell specific product, and also see the information performed</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="service-box col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Development</h4>
+                    </div>
+                    <p>Developing a classroom/departmental social app which consists of group/class chat, documents, video class, departmental result compiler and other features</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="service-box col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Apps Design</h4>
+                    </div>
+                    <p>Ndutech Commercial Application for easy access and user friendly</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="service-box col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Apps Development</h4>
+                    </div>
+                    <p>Secondary School result compiler/grade calculator</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="service-box col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">SEO</h4>
+                    </div>
+                    <p>Agency website built using React and javascript </p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+                <div class="service-box col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Content Creating</h4>
+                    </div>
+                    <p>This is a UI/UX Designs but for product branding</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-box text-center">
-                        <i class="fa fa-2x fa-code text-brand mb-4"></i>
-                        <h4 class="font-weight-bold">Development</h4>
-                        <p>Custom software solutions including social platforms and departmental tools.</p>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-box text-center">
-                        <i class="fab fa-2x fa-android text-brand mb-4"></i>
-                        <h4 class="font-weight-bold">App Design</h4>
-                        <p>User-friendly mobile application interfaces for Android and iOS devices.</p>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5" id="testimonial">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Review</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Clients Say</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p>Excellent service and professional execution of the project. Highly recommended!</p>
+                            <h5 class="font-weight-bold">Client Name</h5>
+                            <small>Profession</small>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -250,30 +352,30 @@
     </div>
     <div class="container-fluid py-5" id="contact">
         <div class="container">
-            <div class="section-title">
-                <h1>Contact</h1>
-                <h1>Get In Touch</h1>
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="contact-form text-center card p-4 shadow-sm">
+                    <div class="contact-form text-center">
                         <form id="contactForm">
                             <div class="form-row">
-                                <div class="col-sm-6 form-group">
-                                    <input type="text" class="form-control p-4" placeholder="Your Name" required>
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" placeholder="Your Name" required="required" />
                                 </div>
-                                <div class="col-sm-6 form-group">
-                                    <input type="email" class="form-control p-4" placeholder="Your Email" required>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" placeholder="Your Email" required="required" />
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control p-4" placeholder="Subject" required>
+                            <div class="control-group mt-3">
+                                <input type="text" class="form-control p-4" placeholder="Subject" required="required" />
                             </div>
-                            <div class="form-group">
-                                <textarea class="form-control py-3 px-4" rows="5" placeholder="Message" required></textarea>
+                            <div class="control-group mt-3">
+                                <textarea class="form-control py-3 px-4" rows="5" placeholder="Message" required="required"></textarea>
                             </div>
-                            <div>
-                                <button class="btn btn-brand px-5 py-3" type="submit">Send Message</button>
+                            <div class="mt-4">
+                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -281,17 +383,18 @@
             </div>
         </div>
     </div>
-    <footer class="container-fluid footer mt-5 pt-5">
-        <div class="container text-center pb-5">
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
             <div class="d-flex justify-content-center mb-4">
                 <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
                 <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
                 <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
                 <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
             </div>
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">NDUTECH</a>. All Rights Reserved.</p>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">NDUTECH</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="#">Benedict</a>
+            </p>
         </div>
-    </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/typed/typed.min.js"></script>
@@ -302,4 +405,4 @@
 
     <script src="js/main.js"></script>
 </body>
-                            </html>
+</html>
