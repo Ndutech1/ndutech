@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const navLinks = [
@@ -7,6 +8,7 @@ const navLinks = [
   { label: 'Skills', href: '#skills' },
   { label: 'Services', href: '#services' },
   { label: 'Portfolio', href: '#portfolio' },
+  { label: 'Source Code', href: '#source-code' },
   { label: 'Contact', href: '#contact' }
 ];
 
@@ -48,7 +50,7 @@ const Navbar = () => {
         
         {/* Visible Logo: < /> NDUTECH */}
         <a
-          href="#home"
+          href="/#home"
           className="group inline-flex items-center gap-3 text-sm font-semibold tracking-[0.2em]"
         >
           {/* Glowing < /> Badge */}
@@ -62,6 +64,7 @@ const Navbar = () => {
           </span>
         </a>
 
+        {/* Desktop Navigation Links */}
         <nav className="hidden items-center gap-6 text-sm text-slate-300 md:flex">
           {navLinks.map((item) => (
             <motion.a
@@ -83,15 +86,17 @@ const Navbar = () => {
           ))}
         </nav>
 
+        {/* Desktop CTA Button -> Links to /hire-me */}
         <div className="hidden items-center gap-4 md:flex">
-          <a
-            href="#contact"
+          <Link
+            to="/hire-me"
             className="rounded-full border border-cyan-500/50 bg-cyan-500/10 px-5 py-2 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_rgba(6,182,212,0.4)]"
           >
             Hire Me
-          </a>
+          </Link>
         </div>
 
+        {/* Mobile Hamburger Button */}
         <button
           type="button"
           aria-label="Toggle navigation menu"
@@ -118,6 +123,7 @@ const Navbar = () => {
         </button>
       </div>
 
+      {/* Mobile Menu Dropdown */}
       <AnimatePresence>
         {menuOpen ? (
           <motion.div
@@ -140,13 +146,15 @@ const Navbar = () => {
                   {item.label}
                 </a>
               ))}
-              <a
-                href="#contact"
+              
+              {/* Mobile CTA Button -> Links to /hire-me */}
+              <Link
+                to="/hire-me"
                 onClick={() => setMenuOpen(false)}
                 className="mt-3 inline-flex items-center justify-center rounded-full bg-cyan-500 px-5 py-3 text-sm font-semibold text-white transition hover:bg-cyan-400"
               >
                 Hire Me
-              </a>
+              </Link>
             </div>
           </motion.div>
         ) : null}
