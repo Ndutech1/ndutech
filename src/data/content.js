@@ -8,7 +8,7 @@ export const heroData = {
     'I build high-performance web applications, scalable backend APIs, and intelligent AI/NLP pipelines. Focused on shipping clean, reliable, and production-ready software.',
   actions: [
     { label: 'Download CV', href: '/legacy/old-site/Profile.pdf', style: 'primary' },
-    { label: 'Hire Me', href: '/hire-me', style: 'secondary' },
+    { label: 'Hire Me', href: 'hire-me', style: 'secondary' },
     { label: "Let's Start a Sprint", href: '#contact', style: 'secondary' }
   ]
 };
