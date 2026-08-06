@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 import HeroSection from './components/HeroSection.jsx';
 import AboutSection from './components/AboutSection.jsx';
 import SkillsSection from './components/SkillsSection.jsx';
@@ -38,6 +39,7 @@ function App() {
         {/* Dedicated Hire Me Page Route */}
         <Route path="/hire-me" element={<HireMeForm />} />
       </Routes>
+      <Analytics />
     </div>
   );
 }
