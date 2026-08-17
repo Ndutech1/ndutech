@@ -6,6 +6,7 @@ import SkillsSection from './components/SkillsSection.jsx';
 import ServicesSection from './components/ServicesSection.jsx';
 import PortfolioSection from './components/PortfolioSection.jsx';
 import ContactSection from './components/ContactSection.jsx';
+import UavSection from './components/UavSection.jsx';
 import HireMeForm from './components/HireMeSection.jsx';
 import SourceCodeSection from './components/SourceCodeSection.jsx';
 import Footer from './components/Footer.jsx';
@@ -20,6 +21,7 @@ const MainPage = () => (
     <HeroSection />
     <AboutSection />
     <SkillsSection />
+    <UavSection />
     <ServicesSection />
     <PortfolioSection />
     <SourceCodeSection/>

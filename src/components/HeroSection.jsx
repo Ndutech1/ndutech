@@ -1,7 +1,8 @@
 // src/components/HeroSection.jsx
-import React, { useEffect, useRef, useState } from 'react';
-import { motion, useInView, useMotionValue, useTransform, animate } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import Navbar from './Navbar.jsx';
+import CountUp from './CountUp.jsx';
 import { heroData } from '../data/content.js';
 import { Briefcase, Layers, Smile, Download, Loader2 } from 'lucide-react';
 import { pdf } from '@react-pdf/renderer';
@@ -10,47 +11,20 @@ import { PortfolioPdfDocument } from './PortfolioPdfDocument.jsx';
 const statsData = [
   {
     icon: Briefcase,
-    numericValue: 5,
-    suffix: '+',
+    value: '5+',
     label: 'Years experience',
   },
   {
     icon: Layers,
-    numericValue: 32,
-    suffix: '+',
+    value: '32+',
     label: 'Projects shipped',
   },
   {
     icon: Smile,
-    numericValue: 57,
-    suffix: '+',
+    value: '57+',
     label: 'Happy clients',
   },
 ];
-
-const AnimatedCounter = ({ value, suffix = '+' }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-50px' });
-  const count = useMotionValue(0);
-  const rounded = useTransform(count, (latest) => Math.floor(latest));
-
-  useEffect(() => {
-    if (isInView) {
-      const controls = animate(count, value, {
-        duration: 2,
-        ease: 'easeOut',
-      });
-      return controls.stop;
-    }
-  }, [isInView, count, value]);
-
-  return (
-    <span ref={ref} className="inline-flex items-center">
-      <motion.span>{rounded}</motion.span>
-      <span>{suffix}</span>
-    </span>
-  );
-};
 
 const HeroSection = () => {
   const [isGeneratingPdf, setIsGeneratingPdf] = useState(false);
@@ -60,11 +34,9 @@ const HeroSection = () => {
     setIsGeneratingPdf(true);
 
     try {
-      // Generate blob in browser
       const blob = await pdf(<PortfolioPdfDocument />).toBlob();
       const url = URL.createObjectURL(blob);
       
-      // Trigger native file download
       const link = document.createElement('a');
       link.href = url;
       link.download = `${heroData.name.replace(/\s+/g, '_')}_Portfolio.pdf`;
@@ -160,6 +132,7 @@ const HeroSection = () => {
           </motion.div>
         </div>
 
+        {/* Stats Grid using the shared CountUp Component */}
         <motion.div
           className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-3"
           initial={{ opacity: 0, y: 40 }}
@@ -179,7 +152,7 @@ const HeroSection = () => {
                   <IconComponent className="h-6 w-6" />
                 </div>
                 <span className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-                  <AnimatedCounter value={stat.numericValue} suffix={stat.suffix} />
+                  <CountUp value={stat.value} />
                 </span>
                 <p className="mt-2 text-sm font-medium text-slate-400">
                   {stat.label}
