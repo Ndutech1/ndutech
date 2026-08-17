@@ -42,6 +42,7 @@ export const aboutData = {
     { label: 'Name', value: 'Ndubuisi Benedict' },
     { label: 'Experience', value: '5+ Years' },
     { label: 'Email', value: 'chidubembenedict2019@gmail.com' },
+    { label: 'Phone', value: '+234 803 759 8796' },
     { label: 'Location', value: 'Abuja, Nigeria' },
     { label: 'Degree', value: 'B.Sc Computer Science' },
     { label: 'Freelance', value: 'Available' }
