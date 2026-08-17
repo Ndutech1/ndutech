@@ -160,7 +160,7 @@ export const uavMissions = [
     clientCategory: 'Defense & Security Operations',
     location: 'Plateau State, Nigeria',
     year: '2023',
-    aircraft: ['DJI M30T', 'DJI M350 RTK', 'Fixed-Wing UAV'],
+    aircraft: ['ARSENIO UAV'],
     description: 'Deployed long-range fixed-wing and multirotor UAV systems for aerial perimeter monitoring, threat detection, and real-time situational awareness in high-risk zones.',
     images: [uavDefensePlateau, uavDefensePlateau002, uavDefensePlateau003,],
     tags: ['Counter-Insecurity', 'Tactical Recon', 'EO/IR Thermal', 'Fixed-Wing Flight']
@@ -180,7 +180,7 @@ export const uavMissions = [
     clientCategory: 'Defense & Security Operations',
     location: 'Zamfara State, Nigeria',
     year: '2024',
-    aircraft: ['DJI M30T', 'DJI M350 RTK', 'Fixed-Wing UAV'],
+    aircraft: ['XANDER UAV', 'BFLY UAV'],
     description: 'Conducted tactical Intelligence, Surveillance, and Reconnaissance (ISR) missions across extended corridors using payload thermal sensors and real-time flight tracking.',
     images: [uavDefenseZamfara, uavDefenseZamfara002 ],
     tags: ['Tactical ISR', 'Perimeter Patrol', 'Thermal Payload', 'Spatial Mapping']
@@ -190,7 +190,7 @@ export const uavMissions = [
     clientCategory: 'Energy & Critical Infrastructure',
     location: 'Kogi State (KP159–KP210 Corridors)',
     year: '2025',
-    aircraft: ['DJI M30T', 'DJI M350 RTK', 'Fixed-Wing UAV'],
+    aircraft: ['DJI M30T', 'DJI M350 RTK', 'BFLY UAV'],
     description: 'Executed daily aerial reconnaissance and thermal inspections across 60+ km of pipeline Right-of-Way (KP151, KP159, KP167, KP184, KP205, KP210) to detect encroachment and structural anomalies.',
     images: [uavPipelineSurvey, uavPipelineSurvey002, uavPipelineSurvey003, uavPipelineSurvey004,],
     tags: ['Right-of-Way', 'Thermal Inspection', 'Infrastructure Security', 'Telemetry Logs']
