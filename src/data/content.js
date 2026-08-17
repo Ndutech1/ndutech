@@ -1,3 +1,4 @@
+//src/data/content.js
 import profilePic from '../assets/profile.png';
 import aboutImage from '../assets/about.jpg';
 
